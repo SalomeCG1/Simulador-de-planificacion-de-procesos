@@ -10,20 +10,20 @@ latencia de respuesta ante eventos críticos de tráfico (choques, fallas de
 semáforos) y la eficiencia general en el procesamiento de un alto volumen de
 datos de tráfico rutinarios.
 
-## 📂 Material completo (código, informe y video)
+## Material completo (código, informe y video)
 
 Todo el material de esta entrega está disponible en la siguiente carpeta de
 Google Drive, incluyendo el **video de evidencia de ejecución**, el
 **código fuente (.py)** y el **informe técnico (.pdf)**:
 
-🔗 **[Ver carpeta completa en Google Drive](https://drive.google.com/drive/folders/15cIp3ayIlsGQJRd9wsQMS3DhGoyiXjjz?usp=sharing)**
+ **[Ver carpeta completa en Google Drive](https://drive.google.com/drive/folders/15cIp3ayIlsGQJRd9wsQMS3DhGoyiXjjz?usp=sharing)**
 
-## 📄 Archivos en este repositorio
+## Archivos en este repositorio
 
 - `siget_scheduler.py` — Código fuente del simulador (Python).
 - `informe_siget.pdf` — Relatoría técnica (objetivos, algoritmos, resultados y conclusiones).
 
-## ⚙️ Cómo ejecutar el simulador
+##  Cómo ejecutar el simulador
 
 Se necesita tener Python 3 instalado. Luego, desde la terminal:
 
@@ -31,7 +31,7 @@ Se necesita tener Python 3 instalado. Luego, desde la terminal:
 python3 siget_scheduler.py
 ```
 
-## 🧩 ¿Qué hace el simulador?
+##  ¿Qué hace el simulador?
 
 - Representa **5 procesos** del SIGET con atributos realistas: tiempo de
   llegada, tiempo de ejecución, prioridad de alerta (1 = emergencia,
@@ -46,14 +46,14 @@ python3 siget_scheduler.py
 - Al final, compara ambos algoritmos según: tiempo de espera promedio y
   latencia de respuesta ante emergencias.
 
-## 📊 Resultados obtenidos
+##  Resultados obtenidos
 
 | Algoritmo | Espera promedio | Latencia promedio en emergencias |
 |---|---|---|
 | Round Robin (q=3) | 13.00 | 8.00 |
 | Prioridad con desalojo | 6.40 | 0.00 |
 
-## ✅ Conclusión
+##  Conclusión
 
 Prioridad con desalojo es el algoritmo más adecuado para dar respuesta
 inmediata a emergencias de tráfico, mientras que Round Robin es más
